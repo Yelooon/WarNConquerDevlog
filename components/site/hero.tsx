@@ -35,9 +35,13 @@ export function Hero() {
 
         <div className="relative">
           <div className="relative rounded-[2rem] border border-border bg-sky/45 p-4 shadow-[0_20px_50px_-30px_oklch(0.47_0.085_152/0.6)] md:p-6">
-            <IslandMap />
+            <img
+              src="TITULO-W_C.png"
+              alt="Logo principal W&C"
+              className="h-auto w-full rounded-[1.5rem] object-cover"
+            />
             <p className="absolute bottom-4 left-4 rounded-full bg-card/95 px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-muted-foreground md:bottom-6 md:left-6">
-              {'[ Arte principal — por definir ]'}
+              {'[ Logo Principal ]'}
             </p>
           </div>
         </div>

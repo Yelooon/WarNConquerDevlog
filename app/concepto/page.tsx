@@ -48,7 +48,11 @@ export default function ConceptoPage() {
           </div>
         </div>
         <div className="reveal rounded-[2rem] border border-border bg-sky/40 p-4">
-          <IslandMap />
+          <img
+            src="TITULO-W_C.png"
+            alt="Logo Principal W&C"
+            className="h-auto w-full rounded-[1.5rem] object-cover"
+          />
         </div>
       </section>
 

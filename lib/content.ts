@@ -73,20 +73,50 @@ export type Leader = {
   focus: string
   tone: Tone
   status: 'prototipo' | 'en-desarrollo'
+  image?: string
 }
 
 export const leaders: Leader[] = [
-  { name: 'Zukgrok', title: 'Líder Hongo', focus: 'Expansión y sinergias acumulativas.', tone: 'leaf', status: 'prototipo' },
-  { name: 'Xil’thar', title: 'Vasto del Vacío', focus: 'Control, reposicionamiento y sabotaje.', tone: 'sky', status: 'prototipo' },
-  { name: 'Faunar', title: 'Druida del Alba', focus: 'Movilidad, enjambres animales y defensa natural.', tone: 'sun', status: 'prototipo' },
-  { name: 'Sahria', title: 'Reina del Desierto', focus: 'Control territorial y juego avanzado con Tierra Ceniza.', tone: 'terracotta', status: 'en-desarrollo' },
+  { 
+    name: 'Zukgrok', 
+    title: 'Líder Hongo', 
+    focus: 'Expansión y sinergias acumulativas.', 
+    tone: 'leaf', 
+    status: 'prototipo',
+    image: '/leaders/ZUKGROK-W_C.png'
+   },
+  { 
+    name: 'Xil’thar', 
+    title: 'Vasto del Vacío', 
+    focus: 'Control, reposicionamiento y sabotaje.', 
+    tone: 'sky', 
+    status: 'en-desarrollo',
+    image: '/leaders/XILTHAR-W_C.png'
+  },
+  { 
+    name: 'Faunar', 
+    title: 'Druida del Alba', 
+    focus: 'Movilidad, enjambres animales y defensa natural.', 
+    tone: 'sun', 
+    status: 'prototipo',
+    image: '/leaders/FAUNAR-W_C.png'
+  },
+  { 
+    name: 'Sahria', 
+    title: 'Reina del Desierto', 
+    focus: 'Control territorial y juego avanzado con Tierra Ceniza.', 
+    tone: 'terracotta', 
+    status: 'prototipo',
+    image: '/leaders/SAHRIA-W_C.png'
+  },
 ]
 
 /** Reemplaza `name`, `role` y agrega `avatar` (ruta en /public) cuando el equipo proporcione los datos. */
 export const team: { name: string; role: string | null; avatar?: string }[] = [
   { 
-    name: 'Integrante 01', 
-    role: null 
+    name: 'Sergio Herrera', 
+    role: 'developer',
+    avatar:'/team/SERGIOFOTO.jpeg'
   },
   { 
     name: 'Diego Rodriguez', 
@@ -94,12 +124,14 @@ export const team: { name: string; role: string | null; avatar?: string }[] = [
     avatar: '/team/drm.jpeg'
   },
   { 
-    name: 'Integrante 03', 
-    role: null 
+    name: 'Andres Valencia', 
+    role: 'UI Designer',
+    avatar: '/team/ANDRESFOTO.png'
   },
   { 
-    name: 'Integrante 04', 
-    role: null 
+    name: 'David Mena', 
+    role: '3D Designer',
+    avatar: '/team/MENAFOTO.png'
   },
   { 
     name: 'Integrante 05', 
