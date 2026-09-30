@@ -16,7 +16,7 @@ export default function GaleriaPage() {
           as="h1"
           eyebrow="Archivo visual"
           title="Galería"
-          description="Registro visual del desarrollo. Las casillas marcadas como placeholder se reemplazarán por capturas, videos y GIFs reales."
+          description="Registro visual del desarrollo. Hay imagenes pendientes por anexar."
         />
       </div>
       <GalleryGrid items={galleryItems} />

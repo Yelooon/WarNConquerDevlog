@@ -67,12 +67,39 @@ export const devLog: DevLogEntry[] = [
     context:
       'Inicialmente el tablero era hexagonal y mucho más pequeño. Las primeras pruebas demostraron rápidamente que esta estructura presentaba problemas de diseño y balance, por lo que el tamaño y estructura del tablero se convirtieron en uno de los principales puntos de exploración.',
     evidence: [
-      { type: 'screenshot', label: 'Screenshot del graybox', caption: 'Graybox v0.1 — tablero y sistemas principales' },
-      { type: 'screenshot', label: 'Screenshot del tablero', caption: 'Estructura del tablero de casillas hexagonales' },
-      { type: 'screenshot', label: 'Screenshot de la UI', caption: 'Primera versión de la UI' },
-      { type: 'video', label: 'Video corto de gameplay', caption: 'Prueba de combate y gestión de cartas' },
-      { type: 'gif', label: 'GIF de una interacción', caption: 'Primera implementación de terraformación' },
-      { type: 'diagram', label: 'Diagrama del Core Loop', caption: 'Diagrama del Core Loop' },
+      { 
+        type: 'screenshot', 
+        label: 'Screenshot del graybox', 
+        caption: 'Graybox v0.1 — tablero y sistemas principales', 
+        src: '/devlog/v0-1/WarNConquer 1st Iteration.png'
+      },
+      { 
+        type: 'screenshot', 
+        label: 'Screenshot del tablero', 
+        caption: 'Estructura del tablero de casillas hexagonales', 
+        src: '/devlog/v0-1/WarNConquer 1st Map.png'
+      },
+      { type: 'screenshot', 
+        label: 'Screenshot de la UI', 
+        caption: 'Primera versión de la UI', 
+        src: '/devlog/v0-1/WarNConquer 1st UI.png'
+      },
+      { 
+        type: 'video', 
+        label: 'Video corto de gameplay', 
+        caption: 'Prueba de combate y gestión de cartas' 
+      },
+      { 
+        type: 'screenshot', 
+        label: 'Mapa terraformado', 
+        caption: 'Primera implementación de terraformación', 
+        src: '/devlog/v0-1/WarNConquer 1st Terraformed.png'
+      },
+      { 
+        type: 'diagram', 
+        label: 'Diagrama del Core Loop', 
+        caption: 'Diagrama del Core Loop' 
+      },
     ],
     findings: [
       {

@@ -84,11 +84,27 @@ export const leaders: Leader[] = [
 
 /** Reemplaza `name`, `role` y agrega `avatar` (ruta en /public) cuando el equipo proporcione los datos. */
 export const team: { name: string; role: string | null; avatar?: string }[] = [
-  { name: 'Integrante 01', role: null },
-  { name: 'Integrante 02', role: null },
-  { name: 'Integrante 03', role: null },
-  { name: 'Integrante 04', role: null },
-  { name: 'Integrante 05', role: null },
+  { 
+    name: 'Integrante 01', 
+    role: null 
+  },
+  { 
+    name: 'Diego Rodriguez', 
+    role: 'Developer', 
+    avatar: '/team/drm.jpeg'
+  },
+  { 
+    name: 'Integrante 03', 
+    role: null 
+  },
+  { 
+    name: 'Integrante 04', 
+    role: null 
+  },
+  { 
+    name: 'Integrante 05', 
+    role: null 
+  },
 ]
 
 export const galleryCategories = ['Graybox', 'Gameplay', 'UI', 'Arte', 'Mapas', 'Desarrollo'] as const
@@ -105,13 +121,71 @@ export type GalleryItem = {
 }
 
 export const galleryItems: GalleryItem[] = [
-  { id: 'g-01', category: 'Graybox', type: 'screenshot', label: 'Screenshot del graybox', caption: 'Graybox v0.1 — vista general' },
-  { id: 'g-02', category: 'Graybox', type: 'screenshot', label: 'Tablero hexagonal', caption: 'Graybox v0.1 — estructura del tablero' },
-  { id: 'g-03', category: 'Gameplay', type: 'video', label: 'Video de gameplay', caption: 'Prueba de combate y gestión de cartas' },
-  { id: 'g-04', category: 'Gameplay', type: 'gif', label: 'GIF de interacción', caption: 'Primera implementación de terraformación' },
-  { id: 'g-05', category: 'UI', type: 'screenshot', label: 'Interfaz de juego', caption: 'UI del graybox — por agregar' },
-  { id: 'g-06', category: 'Arte', type: 'concept', label: 'Concept art', caption: 'Concept art — por agregar' },
-  { id: 'g-07', category: 'Arte', type: 'concept', label: 'Líderes', caption: 'Exploración de Líderes — por agregar' },
-  { id: 'g-08', category: 'Mapas', type: 'diagram', label: 'Mapa del archipiélago', caption: 'Mapa de islas y biomas — por agregar' },
-  { id: 'g-09', category: 'Desarrollo', type: 'diagram', label: 'Diagrama del Core Loop', caption: 'Diagrama del Core Loop' },
+  { 
+    id: 'g-01', 
+    category: 'Graybox', 
+    type: 'screenshot', 
+    label: 'Screenshot del graybox', 
+    caption: 'Graybox v0.1 — vista general', 
+    src: 'devlog/v0-1/WarNConquer 1st Iteration.png'
+  },
+  { 
+    id: 'g-02', 
+    category: 'Graybox', 
+    type: 'screenshot', 
+    label: 'Tablero hexagonal', 
+    caption: 'Graybox v0.1 — estructura del tablero', 
+    src: 'devlog/v0-1/WarNConquer 1st Map.png'
+  },
+  { id: 'g-03', 
+    category: 'Gameplay', 
+    type: 'video', 
+    label: 'Video de gameplay', 
+    caption: 'Prueba de combate y gestión de cartas' 
+  
+  },
+  { 
+    id: 'g-04', 
+    category: 'Graybox', 
+    type: 'screenshot', 
+    label: 'Mapa terraformado', 
+    caption: 'Primera implementación de terraformación', 
+    src: 'devlog/v0-1/WarNConquer 1st Terraformed.png'
+  },
+  { 
+    id: 'g-05', 
+    category: 'UI', 
+    type: 'screenshot', 
+    label: 'Interfaz de juego', 
+    caption: 'UI del graybox', 
+    src: 'devlog/v0-1/WarNConquer 1st UI.png'
+  },
+  { 
+    id: 'g-06', 
+    category: 'Arte', 
+    type: 'concept', 
+    label: 'Concept art', 
+    caption: 'Concept art — por agregar' 
+  },
+  { 
+    id: 'g-07', 
+    category: 'Arte', 
+    type: 'concept', 
+    label: 'Líderes', 
+    caption: 'Exploración de Líderes — por agregar' 
+  },
+  { 
+    id: 'g-08', 
+    category: 'Mapas', 
+    type: 'diagram', 
+    label: 'Mapa del archipiélago', 
+    caption: 'Mapa de islas y biomas — por agregar' 
+  },
+  { 
+    id: 'g-09', 
+    category: 'Desarrollo', 
+    type: 'diagram', 
+    label: 'Diagrama del Core Loop', 
+    caption: 'Diagrama del Core Loop' 
+  },
 ]
