@@ -21,8 +21,8 @@ export const navItems = [
 export const gameInfo: { label: string; value: string | null; icon: 'genre' | 'players' | 'platform' | 'engine' }[] = [
   { label: 'Género', value: 'Estrategia táctica · Control territorial · Construcción de mazos', icon: 'genre' },
   { label: 'Jugadores', value: '1–4', icon: 'players' },
-  { label: 'Plataforma', value: null, icon: 'platform' },
-  { label: 'Motor', value: null, icon: 'engine' },
+  { label: 'Plataforma', value: 'PC', icon: 'platform' },
+  { label: 'Motor', value: 'Unity 6', icon: 'engine' },
 ]
 
 export type CoreLoopIcon = 'energy' | 'draw' | 'terraform' | 'cards' | 'combat' | 'ash' | 'control'
