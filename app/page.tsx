@@ -71,7 +71,7 @@ export default function HomePage() {
             id="equipo"
             eyebrow={`${team.length} integrantes`}
             title="Equipo"
-            description="Nombres, roles y fotografías se agregarán cuando el equipo los confirme."
+            description="Desarrolladores involucrados en el proyecto."
           />
           <ul className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {team.map((m) => (
