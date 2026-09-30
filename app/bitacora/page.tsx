@@ -15,7 +15,7 @@ export default function BitacoraPage() {
         <SectionHeader
           as="h1"
           eyebrow={`${devLog.length} ${devLog.length === 1 ? 'iteración' : 'iteraciones'} registradas`}
-          title="Bitácora de desarrollo"
+          title="Bitácora del desarrollo"
           description="Una timeline de versiones que crece durante todo el semestre."
         />
       </div>
