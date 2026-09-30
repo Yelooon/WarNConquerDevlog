@@ -131,7 +131,7 @@ export const team: { name: string; role: string | null; avatar?: string }[] = [
   { 
     name: 'David Mena', 
     role: '3D Designer',
-    avatar: '/team/MENAFOTO.png'
+    avatar: '/team/davidmenafoto.png'
   },
   { 
     name: 'Integrante 05', 
