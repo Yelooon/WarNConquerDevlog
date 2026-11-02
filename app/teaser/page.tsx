@@ -9,14 +9,15 @@ export const metadata: Metadata = {
 export default function TeaserPage() {
   return (
     <ComingSoon
-      status="Teaser — Próximamente"
-      badge="Disponible — Semana 11"
+      status="Teaser"
+      badge="Primer vistazo"
       title="Teaser"
       description="Una mirada al mundo, las facciones y las batallas de War & Conquer."
       mediaType="teaser"
       mediaLabel="Teaser"
       mediaHint="Espacio reservado para el teaser oficial"
-      formats={['Video', 'Teaser', 'Trailer', 'Imágenes promocionales']}
+      src="https://youtu.be/sfDshZ5ZVqs"
+      // formats={['Video', 'Teaser', 'Trailer', 'Imágenes promocionales']}
     />
   )
 }

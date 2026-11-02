@@ -169,12 +169,22 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Graybox v0.1 — estructura del tablero', 
     src: 'devlog/v0-1/WarNConquer 1st Map.png'
   },
+  /*
   { id: 'g-03', 
     category: 'Gameplay', 
     type: 'video', 
     label: 'Video de gameplay', 
     caption: 'Prueba de combate y gestión de cartas' 
   
+  },
+  */
+ { 
+    id: 'g-02', 
+    category: 'UI', 
+    type: 'screenshot', 
+    label: 'Main Menu v2', 
+    caption: 'Menu Principal', 
+    src: 'devlog/v0-2/MainMenu v2.png'
   },
   { 
     id: 'g-04', 
@@ -194,18 +204,38 @@ export const galleryItems: GalleryItem[] = [
   },
   { 
     id: 'g-06', 
+    category: 'UI', 
+    type: 'screenshot', 
+    label: 'Card Backsprite', 
+    caption: 'Backsprite Oficial de las cartas', 
+    src: 'devlog/v0-3/Card Backsprite.png'
+  },
+  /*
+  { 
+    id: 'g-06', 
     category: 'Arte', 
     type: 'concept', 
     label: 'Concept art', 
     caption: 'Concept art — por agregar' 
   },
+  */
   { 
     id: 'g-07', 
     category: 'Arte', 
     type: 'concept', 
     label: 'Líderes', 
-    caption: 'Exploración de Líderes — por agregar' 
+    caption: 'Exploración de Líderes', 
+    src: 'devlog/v0-2/Leaders Models.jpeg'
   },
+  { 
+    id: 'g-08', 
+    category: 'Mapas', 
+    type: 'screenshot', 
+    label: 'Mapa Ingame', 
+    caption: 'Vista del escenario durante partida', 
+    src: 'devlog/v0-3/New BG ingame.png'
+  },
+  /*
   { 
     id: 'g-08', 
     category: 'Mapas', 
@@ -220,4 +250,5 @@ export const galleryItems: GalleryItem[] = [
     label: 'Diagrama del Core Loop', 
     caption: 'Diagrama del Core Loop' 
   },
+  */
 ]
