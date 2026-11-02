@@ -17,7 +17,8 @@ export default function TeaserPage() {
       mediaLabel="Teaser"
       mediaHint="Espacio reservado para el teaser oficial"
       src="https://youtu.be/sfDshZ5ZVqs"
-      // formats={['Video', 'Teaser', 'Trailer', 'Imágenes promocionales']}
+      formats={['Teaser']}
+      //formats={['Video', 'Teaser', 'Trailer', 'Imágenes promocionales']}
     />
   )
 }
