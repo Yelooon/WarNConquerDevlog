@@ -46,89 +46,59 @@ export type DevLogEntry = {
  */
 export const devLog: DevLogEntry[] = [
   {
-    slug: 'graybox-v0-1',
-    version: 'v0.1',
-    title: 'Graybox — Core Loop y estructura del tablero',
-    badge: 'Primera iteración',
-    date: '2026-09-30',
-    week: '8',
-    tags: ['CARTAS', 'ENERGÍA', 'MAPA', 'LÍDERES', 'TERRAFORMACIÓN', 'PLAYTESTING'],
-    goal: 'Queríamos probar la gestión de Estructuras, Unidades y Hechizos dentro del Core Loop y comprobar si la estructura general del mapa permitía tomar decisiones estratégicas claras.',
+    slug: 'arte-de-cartas-v0-3',
+    version: 'v0.3',
+    title: 'Arte de cartas — Nuevas animaciones',
+    badge: 'Tercera iteración',
+    date: '2026-11-03',
+    week: '14',
+    tags: ['CARTAS', 'BALANCE', 'UI', 'LÍDERES', 'PLAYTESTING', 'COMBATE'],
+    goal: 'Preparacion del Teaser, Implementar al ultimo lider, una UI preliminar y ultimas cartas',
     implemented: [
-      '3 Líderes implementados',
-      'Tablero basado en casillas hexagonales',
-      'Biomas funcionales',
-      'Sistema de energía',
-      'Sistema de cartas',
-      'Ataques',
-      'Sistema de terraformación',
-      'UI',
-      'IA para jugar en singleplayer y realizar pruebas',
+      'Nuevos artes para las cartas',
+      'Animaciones para lideres',
+      'Animaciones de unidades',
+      'Cambios en UI',
     ],
     context:
-      'Inicialmente el tablero era hexagonal y mucho más pequeño. Las primeras pruebas demostraron rápidamente que esta estructura presentaba problemas de diseño y balance, por lo que el tamaño y estructura del tablero se convirtieron en uno de los principales puntos de exploración.',
+      'Algunas cartas ya cuentan con sus propios sprites, aun faltan bastantes, pero inicialmente permite visualizar mejor el contenido',
     evidence: [
       { 
         type: 'screenshot', 
-        label: 'Screenshot del graybox', 
-        caption: 'Graybox v0.1 — tablero y sistemas principales', 
-        src: '/devlog/v0-1/WarNConquer 1st Iteration.png'
+        label: 'Screenshot Unit', 
+        caption: 'Primera carta implementada', 
+        src: '/devlog/v0-3/Unit.png'
       },
       { 
         type: 'screenshot', 
-        label: 'Screenshot del tablero', 
-        caption: 'Estructura del tablero de casillas hexagonales', 
-        src: '/devlog/v0-1/WarNConquer 1st Map.png'
+        label: 'Screenshot de lideres', 
+        caption: 'Modelos de Zukgrok, Faunar y Xilthar', 
+        src: '/devlog/v0-3/New BG ingamee.png'
       },
       { type: 'screenshot', 
-        label: 'Screenshot de la UI', 
-        caption: 'Primera versión de la UI', 
-        src: '/devlog/v0-1/WarNConquer 1st UI.png'
-      },
-      { 
-        type: 'screenshot', 
-        label: 'Mapa terraformado', 
-        caption: 'Primera implementación de terraformación', 
-        src: '/devlog/v0-1/WarNConquer 1st Terraformed.png'
+        label: 'Screenshot Eleccion de lider', 
+        caption: 'Preparacion de la partida', 
+        src: '/devlog/v0-3/Card Backsprite.jpeg'
       },
     ],
     findings: [
       {
-        title: 'El Core Loop resulta comprensible',
-        body: 'Las primeras pruebas permitieron entender la estructura general del ciclo de juego y generaron nuevas ideas para organizar el flujo de decisiones.',
-      },
-      {
-        title: 'El tablero continúa en exploración',
-        body: 'Las casillas hexagonales requieren decisiones de balance precisas relacionadas con movilidad, alcance de cartas y distribución del territorio.',
-      },
-      {
-        title: 'El orden de los turnos necesita ajustes',
-        body: 'El playtesting mostró posibles problemas en el orden de las etapas del turno y en los momentos en que el jugador puede realizar acciones como terraformar.',
-      },
-      {
-        title: 'La economía requiere iteración',
-        body: 'El sistema de energía todavía necesita pruebas para determinar si su funcionamiento genera el ritmo adecuado.',
-      },
-      {
-        title: 'Las cartas necesitan ajustes',
-        body: 'El poder de las cartas, la claridad de sus efectos y su utilidad dentro de las situaciones de juego todavía requieren iteración.',
-      },
-      {
-        title: 'Los Líderes necesitan balance',
-        body: 'Las mecánicas específicas de cada Líder necesitan continuar probándose para asegurar que sus identidades sean claras y que sus habilidades tengan un impacto apropiado.',
+        title: 'Pending',
+        body: 'Descripcion pendiente',
       },
     ],
     nextSteps: [
-      'Revisar la estructura y orden de las etapas del turno.',
-      'Iterar el balance de energía y poder de las cartas.',
-      'Ajustar las mecánicas de los Líderes y mejorar la claridad de sus efectos.',
+      'Pendiente'
     ],
   },
 
 
 
+  
+
+
   {
-    slug: 'Xilthar y Teaser v0-2',
+    slug: 'xilthar-y-teaser-v0-2',
     version: 'v0.2',
     title: 'Interfaz preliminar — Implementacion de los lideres',
     badge: 'Segunda iteración',
@@ -208,50 +178,84 @@ export const devLog: DevLogEntry[] = [
 
 
 
+
   {
-    slug: 'Arte de Cartas! v0-3',
-    version: 'v0.3',
-    title: 'Arte de cartas — Nuevas animaciones',
-    badge: 'Tercera iteración',
-    date: '2026-11-03',
-    week: '14',
-    tags: ['CARTAS', 'BALANCE', 'UI', 'LÍDERES', 'PLAYTESTING', 'COMBATE'],
-    goal: 'Preparacion del Teaser, Implementar al ultimo lider, una UI preliminar y ultimas cartas',
+    slug: 'graybox-v0-1',
+    version: 'v0.1',
+    title: 'Graybox — Core Loop y estructura del tablero',
+    badge: 'Primera iteración',
+    date: '2026-09-30',
+    week: '8',
+    tags: ['CARTAS', 'ENERGÍA', 'MAPA', 'LÍDERES', 'TERRAFORMACIÓN', 'PLAYTESTING'],
+    goal: 'Queríamos probar la gestión de Estructuras, Unidades y Hechizos dentro del Core Loop y comprobar si la estructura general del mapa permitía tomar decisiones estratégicas claras.',
     implemented: [
-      'Nuevos artes para las cartas',
-      'Animaciones para lideres',
-      'Animaciones de unidades',
-      'Cambios en UI',
+      '3 Líderes implementados',
+      'Tablero basado en casillas hexagonales',
+      'Biomas funcionales',
+      'Sistema de energía',
+      'Sistema de cartas',
+      'Ataques',
+      'Sistema de terraformación',
+      'UI',
+      'IA para jugar en singleplayer y realizar pruebas',
     ],
     context:
-      'Algunas cartas ya cuentan con sus propios sprites, aun faltan bastantes, pero inicialmente permite visualizar mejor el contenido',
+      'Inicialmente el tablero era hexagonal y mucho más pequeño. Las primeras pruebas demostraron rápidamente que esta estructura presentaba problemas de diseño y balance, por lo que el tamaño y estructura del tablero se convirtieron en uno de los principales puntos de exploración.',
     evidence: [
       { 
         type: 'screenshot', 
-        label: 'Screenshot Unit', 
-        caption: 'Primera carta implementada', 
-        src: '/devlog/v0-3/Unit.png'
+        label: 'Screenshot del graybox', 
+        caption: 'Graybox v0.1 — tablero y sistemas principales', 
+        src: '/devlog/v0-1/WarNConquer 1st Iteration.png'
       },
       { 
         type: 'screenshot', 
-        label: 'Screenshot de lideres', 
-        caption: 'Modelos de Zukgrok, Faunar y Xilthar', 
-        src: '/devlog/v0-3/New BG ingamee.png'
+        label: 'Screenshot del tablero', 
+        caption: 'Estructura del tablero de casillas hexagonales', 
+        src: '/devlog/v0-1/WarNConquer 1st Map.png'
       },
       { type: 'screenshot', 
-        label: 'Screenshot Eleccion de lider', 
-        caption: 'Preparacion de la partida', 
-        src: '/devlog/v0-3/Card Backsprite.png'
+        label: 'Screenshot de la UI', 
+        caption: 'Primera versión de la UI', 
+        src: '/devlog/v0-1/WarNConquer 1st UI.png'
+      },
+      { 
+        type: 'screenshot', 
+        label: 'Mapa terraformado', 
+        caption: 'Primera implementación de terraformación', 
+        src: '/devlog/v0-1/WarNConquer 1st Terraformed.png'
       },
     ],
     findings: [
       {
-        title: 'Pending',
-        body: 'Descripcion pendiente',
+        title: 'El Core Loop resulta comprensible',
+        body: 'Las primeras pruebas permitieron entender la estructura general del ciclo de juego y generaron nuevas ideas para organizar el flujo de decisiones.',
+      },
+      {
+        title: 'El tablero continúa en exploración',
+        body: 'Las casillas hexagonales requieren decisiones de balance precisas relacionadas con movilidad, alcance de cartas y distribución del territorio.',
+      },
+      {
+        title: 'El orden de los turnos necesita ajustes',
+        body: 'El playtesting mostró posibles problemas en el orden de las etapas del turno y en los momentos en que el jugador puede realizar acciones como terraformar.',
+      },
+      {
+        title: 'La economía requiere iteración',
+        body: 'El sistema de energía todavía necesita pruebas para determinar si su funcionamiento genera el ritmo adecuado.',
+      },
+      {
+        title: 'Las cartas necesitan ajustes',
+        body: 'El poder de las cartas, la claridad de sus efectos y su utilidad dentro de las situaciones de juego todavía requieren iteración.',
+      },
+      {
+        title: 'Los Líderes necesitan balance',
+        body: 'Las mecánicas específicas de cada Líder necesitan continuar probándose para asegurar que sus identidades sean claras y que sus habilidades tengan un impacto apropiado.',
       },
     ],
     nextSteps: [
-      'Pendiente'
+      'Revisar la estructura y orden de las etapas del turno.',
+      'Iterar el balance de energía y poder de las cartas.',
+      'Ajustar las mecánicas de los Líderes y mejorar la claridad de sus efectos.',
     ],
-  }
+  },
 ]

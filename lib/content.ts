@@ -90,7 +90,7 @@ export const leaders: Leader[] = [
     title: 'Vasto del Vacío', 
     focus: 'Control, reposicionamiento y sabotaje.', 
     tone: 'sky', 
-    status: 'en-desarrollo',
+    status: 'prototipo',
     image: '/leaders/XILTHAR-W_C.png'
   },
   { 
@@ -208,7 +208,7 @@ export const galleryItems: GalleryItem[] = [
     type: 'screenshot', 
     label: 'Card Backsprite', 
     caption: 'Backsprite Oficial de las cartas', 
-    src: 'devlog/v0-3/Card Backsprite.png'
+    src: 'devlog/v0-3/Card Backsprite.jpeg'
   },
   /*
   { 
