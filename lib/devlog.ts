@@ -73,7 +73,7 @@ export const devLog: DevLogEntry[] = [
         type: 'screenshot', 
         label: 'Screenshot de lideres', 
         caption: 'Modelos de Zukgrok, Faunar y Xilthar', 
-        src: '/devlog/v0-3/New BG ingamee.png'
+        src: '/devlog/v0-3/New BG ingame.png'
       },
       { type: 'screenshot', 
         label: 'Screenshot Eleccion de lider', 

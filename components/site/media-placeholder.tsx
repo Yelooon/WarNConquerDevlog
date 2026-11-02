@@ -56,17 +56,39 @@ export function MediaPlaceholder({
   const title = (label ?? mediaTypeLabel[type]).toUpperCase()
 
   if (src) {
-    return (
-      <div className={cn('relative overflow-hidden rounded-2xl bg-muted', aspects[aspect], className)}>
-        {isVideoSource(src) ? (
-          <video src={src} controls preload="metadata" className="size-full object-cover" aria-label={alt ?? label} />
-        ) : (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={src} alt={alt ?? label ?? ''} className="size-full object-cover" loading="lazy" />
-        )}
-      </div>
-    )
-  }
+  const youtubeId = getYouTubeId(src)
+
+  return (
+    <div className={cn('relative overflow-hidden rounded-2xl bg-muted', aspects[aspect], className)}>
+      {youtubeId ? (
+        <iframe
+          src={`https://www.youtube.com/embed/${youtubeId}`}
+          title={alt ?? label ?? 'Video de YouTube'}
+          className="size-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      ) : isVideoSource(src) ? (
+        <video
+          src={src}
+          controls
+          preload="metadata"
+          className="size-full object-cover"
+          aria-label={alt ?? label}
+        />
+      ) : (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={src}
+          alt={alt ?? label ?? ''}
+          className="size-full object-cover"
+          loading="lazy"
+        />
+      )}
+    </div>
+  )
+}
 
   return (
     <div
@@ -100,6 +122,14 @@ export function MediaPlaceholder({
       {size !== 'sm' && <p className="text-xs text-muted-foreground">{hint ?? hints[type]}</p>}
     </div>
   )
+}
+
+function getYouTubeId(url: string): string | null {
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([^&?]+)/
+  )
+
+  return match?.[1] ?? null
 }
 
 export { MediaPlaceholder as PlaceholderMedia }
