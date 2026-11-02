@@ -71,13 +71,13 @@ export const devLog: DevLogEntry[] = [
       },
       { 
         type: 'screenshot', 
-        label: 'Screenshot de lideres', 
-        caption: 'Modelos de Zukgrok, Faunar y Xilthar', 
+        label: 'Screenshot ingame', 
+        caption: 'Screenshot del escenario ingame', 
         src: '/devlog/v0-3/New BG ingame.png'
       },
       { type: 'screenshot', 
-        label: 'Screenshot Eleccion de lider', 
-        caption: 'Preparacion de la partida', 
+        label: 'Card Backsprite', 
+        caption: 'Backsprite de las cartas', 
         src: '/devlog/v0-3/Card Backsprite.jpeg'
       },
     ],
@@ -128,12 +128,12 @@ export const devLog: DevLogEntry[] = [
         type: 'screenshot', 
         label: 'Screenshot de lideres', 
         caption: 'Modelos de Zukgrok, Faunar y Xilthar', 
-        src: '/devlog/v0-2/Leaders Models.png'
+        src: '/devlog/v0-2/Leaders Models.jpeg'
       },
       { type: 'screenshot', 
         label: 'Screenshot Eleccion de lider', 
         caption: 'Preparacion de la partida', 
-        src: '/devlog/v0-2/WarNConquer PrepGame.png'
+        src: '/devlog/v0-2/WarNConquer PrepGame.jpeg'
       },
     ],
     findings: [
